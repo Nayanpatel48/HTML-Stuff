@@ -1,0 +1,92 @@
+/* Basic styles and layouts */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* margins are used to create space around elements, outside of any defined borders.There are properties
+    for creating margine for each side of the element. margine individual sides : margin-top, margin-bottom
+    ,margin-left, margin-right*/
+    padding: 0;
+    /* padding is used to create space around an element's content, inside of any defined borders. There are 
+    properties for creating padding for each side of the element content. padding individual sides : 
+    padding-top, padding-bottom, padding-left, padding-right.*/
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    /* CSS background properties are used to add background effects for elements. */
+    color: #333
+    /* Sets text color. */
+}
+header{
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    /* Specifies the horizontal alignment of the text in an element. */
+}
+header nav ul {
+    list-style: none;
+    /* type of list item maker in the list */
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    /* The diplay property specifies the display behavior of an element.like inline, block, contents, flex etc. */
+    padding: 0 10px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /* text-decoration property specifies the location added to text, and is a shorthand property. */
+}
+main{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    /* justify-content property aligns the flexible container's  items when the items do not use all
+    available space on the main-axis(horizontally). It can also be used in grid container to align grid items in the inline direction.*/
+}
+.form-container{
+    background-color: #fff;
+    border-radius: 8px;
+    /* border-radius property defines the radius of the border's radius of elements. */
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+h2{
+    text-align: center;
+    color: #444;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    /* font-weight property sets how thick or thin characters in text should be displayed. */
+}
+input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #e76e4d;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    bottom: 0;
+}
