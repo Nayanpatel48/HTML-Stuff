@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development concepts demo</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Header section -->
+     <header>
+        <!-- It represents the container for introductory content or set of navigation links.
+        You can have multiple header elements in single document. -->
+        <h1>
+            <!-- h1 defines most important heading & h6 defines least important heading-->
+            Welcome to our website
+        </h1>
+        <nav>
+            <!-- nav link defines set of navigation links. 
+            It is not compalsory for all navigation links to be inside `nav` element,
+            but only the important navlinks should be inside `nav` element-->
+            <ul>
+                <!-- `ul` tag defines the unordered(bulleted) list.
+                use `li` with `ul` to create `unordered lists`-->
+                <li>
+                    <!-- li tag defines the list item.
+                    li tag is used inside `ordered list` & `unordered list`.
+                    In `ul` the items are displayed in the form of `bullet points`.
+                    In 'ol' the items are displayed in the form of `numbered or letters` -->
+                    <a href="#">Home</a>
+                    <!-- `a` tage defines the anchor tag which is used to link one page to another page
+                    The most important attribute of the anchor tag is the `href` attribute, which indicates
+                    the link's destination. By default the links will appear as follows in the browswer:
+                    ->An unvisited links as underlined & blue.
+                    ->A visited link is underlined & purple.
+                    ->An active link is underlined & red. -->
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Explore</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <!-- main tag specifies the `main content` of a document. The content inside `main` should be unique 
+        to the document. It should contain the content which is not repeated in entire document. There should not more than one `main` element inside the document.-->
+        <section class="form-container">
+            <!-- section tag defines the `section` in the document.  -->
+            <h2>
+                Sign up form
+            </h2>
+            <form id="signupForm">
+                <!-- form tag is used to create a HTML form for user input. It can contain one or more elements. -->
+                <label for="firstName">First Name:</label>
+                <!-- label tag defines label for several elements:
+                -> <input type="checkbox">
+                -> <input type="color">
+                -> <input type="text">
+                -> <input type="radio">
+                -> <input type="email"> -->
+                <input 
+                    type="text" 
+                    id="firstName" 
+                    name="firstName" 
+                    placeholder="Enter your first Name:" 
+                    required
+                >
+                <!-- The input tag defines the input field for user where he/she can enter the data.
+                It is the most important form element.The input field can be displayed in various ways based on the type of attribute. The different types are as follows:
+                -> <input type="button">
+                -> <input type="checkbox">
+                -> <input type="date">
+                -> <input type="color">
+                -> <input type="email">
+                -> <input type="text"> -->
+
+                <label for="lastName">Last Name:</label>
+                <input 
+                    type="text" 
+                    id="lastName" 
+                    name="lastName" 
+                    placeholder="Enter your last Name:" 
+                    required
+                >
+
+                <label for="userName">User Name:</label>
+                <input 
+                    type="text" 
+                    id="userName" 
+                    name="userName" 
+                    placeholder="Enter your user Name:" 
+                    required
+                >
+
+                <label for="password">Password:</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Enter your password:" 
+                    required
+                >
+
+                <label for="confirmPassword">confirm Password:</label>
+                <input 
+                    type="password" 
+                    id="confirmPassword" 
+                    name="confirmPassword" 
+                    placeholder="confirm Password:" 
+                    required
+                >
+
+                <label for="dob">Date of birth:</label>
+                <input 
+                    type="date" 
+                    id="dob" 
+                    name="dob" 
+                    required
+                >
+
+                <button type="submit">
+                    <!-- button tag defines the clickable button. Inside button you can put tags. That is not possible with the button created with input tag! Always include the type attribute for the button element, to tell browser what type of button it is. -->
+                    Submit
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- footer element defines the footer of the document or section. A footer element typically contains: authorship information, copyright information, contact information, sitemap, back to top links, related documents. -->
+        <p>
+            <!-- The p tag defines the paragraph. Browser automatically adds single blank line before & after each paragraph tag. -->
+            &copy; 2024 Your Website. All rights reserved.
+        </p>
+    </footer>
+    <script src="./index.js"></script>
+    <!-- script tag is used to embed the client-side-script (JavaScript). The script tag contains either scripting statements or external script file through the src attribute. Common usages of javaScript is for image manipulation, from validation & dynamic changes of document. -->
+</body>
+</html>
